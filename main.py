@@ -12,6 +12,9 @@ import os
 
 LINE = "Senior Vice President of Apologizing to the Cloud"
 
+# Gate: the brief caps the title at 60 characters.
+assert 1 <= len(LINE) <= 60, len(LINE)
+
 
 def main() -> None:
     os.makedirs("/output", exist_ok=True)
